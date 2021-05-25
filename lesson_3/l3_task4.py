@@ -9,9 +9,9 @@ print(array)
 
 num = array[0]
 max_frq = 1
-for i in range(SIZE - 1):
+for i in range(len(array) - 1):
     frq = 1
-    for j in range(i + 1, SIZE):
+    for j in range(i + 1, len(array)):
         if array[i] == array[j]:
             frq += 1
     if frq > max_frq:
